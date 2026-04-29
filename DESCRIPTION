@@ -2,10 +2,11 @@ Package: triangdist
 Title: Triangular Distribution Functions
 Version: 0.0.0.9000
 Authors@R:
-    person("Igofe", email = "igofe@users.noreply.github.com",
+    person("Ignacio", "Oguiza Ferrer",
+           email = "igofe@users.noreply.github.com",
            role = c("aut", "cre"))
 Description: Implements density, distribution, quantile, and random generation
-    functions for triangular distributions with vectorized parameters.
+    functions for triangular distributions.
 License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

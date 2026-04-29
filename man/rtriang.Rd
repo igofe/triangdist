@@ -7,21 +7,19 @@
 rtriang(n, min, max, mode)
 }
 \arguments{
-\item{n}{Number of observations. If \code{length(n) > 1}, the length is used.}
+\item{n}{Number of observations.}
 
-\item{min}{Numeric vector of lower limits.}
+\item{min}{Lower limit of the distribution.}
 
-\item{max}{Numeric vector of upper limits.}
+\item{max}{Upper limit of the distribution.}
 
-\item{mode}{Numeric vector of modes. Each value must lie between \code{min} and
-\code{max}, inclusive.}
+\item{mode}{Mode of the distribution.}
 }
 \value{
-A numeric vector of random values.
+A numeric vector with random values.
 }
 \description{
-Generates random values from a triangular distribution using inverse
-transform sampling.
+Generates random values from a triangular distribution.
 }
 \examples{
 set.seed(1)

@@ -9,19 +9,17 @@ dtriang(x, min, max, mode)
 \arguments{
 \item{x}{Numeric vector of quantiles.}
 
-\item{min}{Numeric vector of lower limits.}
+\item{min}{Lower limit of the distribution.}
 
-\item{max}{Numeric vector of upper limits.}
+\item{max}{Upper limit of the distribution.}
 
-\item{mode}{Numeric vector of modes. Each value must lie between \code{min} and
-\code{max}, inclusive.}
+\item{mode}{Mode of the distribution.}
 }
 \value{
 A numeric vector with the density values.
 }
 \description{
-Computes the probability density function of a triangular distribution with
-lower limit \code{min}, upper limit \code{max}, and mode \code{mode}.
+Computes the density of a triangular distribution.
 }
 \examples{
 dtriang(c(0, 0.5, 1), min = 0, max = 1, mode = 0.5)

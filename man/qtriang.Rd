@@ -7,21 +7,19 @@
 qtriang(p, min, max, mode)
 }
 \arguments{
-\item{p}{Numeric vector of probabilities. Values must lie in \verb{[0, 1]}.}
+\item{p}{Numeric vector of probabilities between 0 and 1.}
 
-\item{min}{Numeric vector of lower limits.}
+\item{min}{Lower limit of the distribution.}
 
-\item{max}{Numeric vector of upper limits.}
+\item{max}{Upper limit of the distribution.}
 
-\item{mode}{Numeric vector of modes. Each value must lie between \code{min} and
-\code{max}, inclusive.}
+\item{mode}{Mode of the distribution.}
 }
 \value{
-A numeric vector of quantiles.
+A numeric vector with quantiles.
 }
 \description{
-Computes the inverse cumulative distribution function of a triangular
-distribution with lower limit \code{min}, upper limit \code{max}, and mode \code{mode}.
+Computes the inverse cumulative probability of a triangular distribution.
 }
 \examples{
 qtriang(c(0.25, 0.5, 0.75), min = 0, max = 1, mode = 0.5)

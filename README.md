@@ -1,12 +1,15 @@
 # triangdist
 
-`triangdist` implements the triangular distribution in R. It provides density,
-distribution, quantile, and random-generation functions with vectorized
-parameters.
+This package implements the triangular distribution in R.
+
+It includes four functions:
+
+- `dtriang()` for the density
+- `ptriang()` for the cumulative distribution
+- `qtriang()` for the quantile function
+- `rtriang()` for random generation
 
 ## Installation
-
-Install the development version from GitHub with:
 
 ```r
 install.packages("remotes")
