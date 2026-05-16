@@ -152,8 +152,9 @@ rtriang <- function(n, min, max, mode) {
     n <- length(n)
   }
 
-  if (!is.numeric(n) || n < 0 || n != as.integer(n)) {
-    stop("n must be a positive whole number")
+  n <- as.integer(n[1])
+  if (is.na(n) || n < 0) {
+    stop("n must be a non-negative integer")
   }
 
   if (n == 0) {
